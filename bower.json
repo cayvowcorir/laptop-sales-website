@@ -1,0 +1,22 @@
+{
+  "name": "laptop-sales-website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cayvowcorir/laptop-sales-website",
+  "authors": [
+    "Kevin Korir <cayvowcorir@gmail.com>"
+  ],
+  "description": "Website to enable online laptop sales",
+  "moduleType": [
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
