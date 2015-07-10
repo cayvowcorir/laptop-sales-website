@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var db = require('./db/db');
 
 var app = express();
 
@@ -22,6 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules/angular')));
+app.use(express.static(path.join(__dirname, 'bower_components/jquery/dist')));
 
 app.use('/', routes);
 app.use('/users', users);
@@ -58,4 +61,11 @@ app.use(function(err, req, res, next) {
 });
 
 
+//listening port
+app.listen(1337, "localhost");
+console.log("Server running at http://localhost:1337/");
+
 module.exports = app;
+
+//Other Javascript code
+

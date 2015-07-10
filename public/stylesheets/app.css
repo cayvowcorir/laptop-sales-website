@@ -1,0 +1,18 @@
+body{
+	width: 100%;
+}
+#nav_bar{
+	background-color: #85478B;
+	margin: 0px auto;
+	min-width: 100%;
+
+}
+#login, #register{
+	background-color: transparent;
+	margin-right: 10px;
+	border-style: none;
+	box-shadow: none;
+}
+.brand-logo{
+	margin-left: 10px;
+}
